@@ -1,0 +1,62 @@
+body {
+    background-image: linear-gradient(to right, rgb(252, 165, 241), rgb(181, 255, 255));
+}
+
+p { /* Requirement-2.A */
+    font-size: 20px; /* Requirement-2.1 */
+    font-weight: bold;
+}
+
+p.aboutMe { /* Requirement-2.C */
+    line-height: 30px;
+    margin-left: 60px;  /* Requirement-2.6 */
+    margin-right: 60px;
+    padding: 5px;
+    text-align: center;
+    border-style: solid;
+
+    background: lightpink; /* Requirement-2.4 */
+}
+
+/* Header Properties */
+h1, h4 { /* Requirement-2.B */
+    text-align: center; /* Requirement-2.2 */
+}
+
+/* Navigation Bar Properties */
+ul.navigationBar {
+    list-style-type: none; /* Requirement-2.8 */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Requirement-2.14 */
+    background-color:black;
+    position:sticky; /* Requirement-2.15 */
+    top: 0;
+}
+
+ul.navigationBar li {
+    float:left; /* Requirement-2.11 */
+    border-right: 3px solid #bbb;
+}
+
+ul.navigationBar li a {
+    display:block; /* Requirement-2.12 */
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+}
+
+ul.navigationBar li a:hover:not(.active) /* Requirement-2.E */{
+    background-color: #f332e9;
+}
+
+ul.navigationBar li a:active {
+    background-color: #f332e9;
+}
+
+#firstSelfie {
+    size:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
