@@ -7,6 +7,47 @@ p { /* Requirement-2.A */
     font-weight: bold;
 }
 
+table, th, td { /* Requirement-2.B */
+    border: 1px solid black;  /* Requirement-2.5 */
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+figure {
+    text-align: center;
+}
+figure.gojoSelfie {
+    text-align: left;
+}
+
+th, td {
+    background-color: #FFC0CB;
+}
+
+details { /* Requirement-2.G */
+    font-family: Monospace, sans-serif;
+}
+
+details summary { /* Requirement-2.H */
+    background-color: #FFC0CB;
+    width:100px;
+    padding:4px 10px;
+    border:1px solid black;
+}
+
+details[open] summary {
+    background-color: #FF92A5;
+}
+
+details > ul {
+    background-color: #C5C5C5;
+    width:fit-content;
+    margin-top:0;
+    padding-right: 20px;
+    padding-left: 25px;
+}
+
+
 p.aboutMe { /* Requirement-2.C */
     line-height: 30px;
     margin-left: 60px;  /* Requirement-2.6 */
@@ -15,12 +56,16 @@ p.aboutMe { /* Requirement-2.C */
     text-align: center;
     border-style: solid;
 
-    background: lightpink; /* Requirement-2.4 */
+    background: #FFC0CB; /* Requirement-2.4 */
 }
 
 /* Header Properties */
 h1, h4 { /* Requirement-2.B */
     text-align: center; /* Requirement-2.2 */
+}
+
+h1.titleName {
+    font-size: 40px;
 }
 
 /* Navigation Bar Properties */
@@ -54,8 +99,9 @@ ul.navigationBar li a:active {
     background-color: #f332e9;
 }
 
-#firstSelfie {
-    size:10px;
+
+#firstSelfie { /* Requirement-2.D */
+    max-width: 30%;
     margin-left: 10px;
     margin-right: 10px;
 }
