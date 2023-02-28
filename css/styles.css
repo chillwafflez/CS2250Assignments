@@ -135,7 +135,7 @@ p.clockInSystemDescription {
 
 .clockInProjectImage { /* Requirement-2.C */
     position: absolute; 
-    right: 500px; /* Requirement-2.9*/
+    right: 380px; /* Requirement-2.9*/
     top: 200px;
 }
 
@@ -148,14 +148,14 @@ p.animeReminderDescription {
 
 .animeReminderAppImage {
     position: absolute; 
-    right: 500px;
+    right: 390px;
     top: 450px;
     z-index: -1 /* Requirement-2.17 */
 }
 
 #gojoDance { /* Requirement-2.D */
     position: absolute; 
-    right: 780px;
+    right: 670px;
     top: 600px;
     width:100px;
 }
