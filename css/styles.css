@@ -54,9 +54,8 @@ ul.navigationBar li a:active {
     background-color: #f332e9;
 }
 
-#firstSelfie {
-    size:10px;
-    margin-left: 10px;
-    margin-right: 10px;
+#firstSelfie /* Requirement-2.D */{
+    border: 3px solid black;
+    width:300px;
 }
 
