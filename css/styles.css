@@ -28,18 +28,18 @@ details { /* Requirement-2.G */
     font-family: Monospace, sans-serif;
 }
 
-details summary { /* Requirement-2.H */
-    background-color: #FFC0CB;
+details summary { /* Requirement-2.F */
+    background-color: #FFC0CB; /* Requirement-2.4 */
     width:100px;
     padding:4px 10px;
     border:1px solid black;
 }
 
-details[open] summary {
+details[open] summary { /* Requirement-2.H */
     background-color: #FF92A5;
 }
 
-details > ul {
+details ul { /* Requirement-2.F */
     background-color: #C5C5C5;
     width:fit-content;
     margin-top:0;
@@ -59,6 +59,10 @@ p.aboutMe { /* Requirement-2.C */
     background: #FFC0CB; /* Requirement-2.4 */
 }
 
+p.emptySpace {
+    visibility: hidden; /* Requirement-2.16 */
+}
+
 /* Header Properties */
 h1, h4 { /* Requirement-2.B */
     text-align: center; /* Requirement-2.2 */
@@ -67,6 +71,12 @@ h1, h4 { /* Requirement-2.B */
 h1.titleName {
     font-size: 40px;
 }
+
+h4.subTitle {
+    color:#e940b1; /* Requirement-2.3 */
+}
+
+
 
 /* Navigation Bar Properties */
 ul.navigationBar {
@@ -82,6 +92,7 @@ ul.navigationBar {
 ul.navigationBar li {
     float:left; /* Requirement-2.11 */
     border-right: 3px solid #bbb;
+    clear:none; /* Requirement-2.13 */
 }
 
 ul.navigationBar li a {
@@ -91,18 +102,60 @@ ul.navigationBar li a {
     padding:14px 16px;
 }
 
-ul.navigationBar li a:hover:not(.active) /* Requirement-2.E */{
+ul.navigationBar li a:hover:not(.active) { /* Requirement-2.E */
     background-color: #f332e9;
 }
 
-ul.navigationBar li a:active {
+ul.navigationBar li a:active { /* Requirement-2.E */
     background-color: #f332e9;
+}
+
+ul.languageList {
+    list-style: square; /* Requirement-2.8 */
+}
+
+ul.projectList {
+    list-style: square;
 }
 
 
 #firstSelfie { /* Requirement-2.D */
-    max-width: 30%;
+    max-width: 30%; /* Requirement-2.7 */
     margin-left: 10px;
     margin-right: 10px;
 }
 
+
+p.clockInSystemDescription {
+    position: relative; 
+    width: 50%;
+    left: 30px; /* Requirement-2.9*/
+    top: 100%; /* Requirement-2.10 */
+}
+
+.clockInProjectImage { /* Requirement-2.C */
+    position: absolute; 
+    right: 500px; /* Requirement-2.9*/
+    top: 200px;
+}
+
+p.animeReminderDescription {
+    position: relative; 
+    width: 50%; /* Requirement-2.10 */
+    left: 30px;
+    top: 100%;
+}
+
+.animeReminderAppImage {
+    position: absolute; 
+    right: 500px;
+    top: 450px;
+    z-index: -1 /* Requirement-2.17 */
+}
+
+#gojoDance { /* Requirement-2.D */
+    position: absolute; 
+    right: 780px;
+    top: 600px;
+    width:100px;
+}
