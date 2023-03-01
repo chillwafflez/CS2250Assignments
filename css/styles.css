@@ -39,7 +39,7 @@ details[open] summary { /* Requirement-2.H */
     background-color: #FF92A5;
 }
 
-details ul { /* Requirement-2.F */
+details ul { 
     background-color: #C5C5C5;
     width:fit-content;
     margin-top:0;
@@ -64,7 +64,7 @@ p.emptySpace {
 }
 
 /* Header Properties */
-h1, h4 { /* Requirement-2.B */
+h1, h4 {
     text-align: center; /* Requirement-2.2 */
 }
 
@@ -80,7 +80,7 @@ h4.subTitle {
 
 /* Navigation Bar Properties */
 ul.navigationBar {
-    list-style-type: none; /* Requirement-2.8 */
+    list-style-type: none; 
     margin: 0;
     padding: 0;
     overflow: hidden; /* Requirement-2.14 */
@@ -102,7 +102,7 @@ ul.navigationBar li a {
     padding:14px 16px;
 }
 
-ul.navigationBar li a:hover:not(.active) { /* Requirement-2.E */
+ul.navigationBar li a:hover:not(.active) { 
     background-color: #f332e9;
 }
 
@@ -127,21 +127,21 @@ ul.projectList {
 
 
 p.clockInSystemDescription {
-    position: relative; 
+    position: relative;  /* Requirement-2.10 */
     width: 50%;
-    left: 30px; /* Requirement-2.9*/
-    top: 100%; /* Requirement-2.10 */
+    left: 30px; 
+    top: 100%; 
 }
 
 .clockInProjectImage { /* Requirement-2.C */
-    position: absolute; 
-    right: 380px; /* Requirement-2.9*/
+    position: absolute; /* Requirement-2.9 */
+    right: 380px; 
     top: 200px;
 }
 
 p.animeReminderDescription {
     position: relative; 
-    width: 50%; /* Requirement-2.10 */
+    width: 50%;
     left: 30px;
     top: 100%;
 }
@@ -153,7 +153,7 @@ p.animeReminderDescription {
     z-index: -1 /* Requirement-2.17 */
 }
 
-#gojoDance { /* Requirement-2.D */
+#gojoDance { 
     position: absolute; 
     right: 670px;
     top: 600px;
